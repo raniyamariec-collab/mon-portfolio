@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mes Projets — Raniya Marie-C Kouamé</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="projet.css" />
+</head>
+<body>
+  <div class="bg-orbs"></div>
+
+  <!-- NAVIGATION -->
+  <header>
+    <div class="container navbar">
+      <a href="intex.html" class="brand">
+        <span class="brand-monogram">R</span>
+        <span>Raniya Marie-C</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="intex.html">Accueil</a></li>
+        <li><a href="index.html#apropos">À propos</a></li>
+        <li><a href="projet.html" class="active">Projets</a></li>
+        <li><a href="projet.html#contact">Contact</a></li>
+      </ul>
+
+      <button type="button" class="menu-toggle" aria-label="Ouvrir le menu" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-title">📁 Mes <span class="highlight">Projets</span></h1>
+          <p class="section-subtitle">Découvrez en détail quelques-unes de mes réalisations</p>
+        </div>
+
+        <!-- 6 CARTES PROJETS -->
+        <div class="projects-grid">
+          <article class="project-card" id="web-scraping">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=500&q=80" alt="Projet Web Scraping">
+            </div>
+            <div class="project-body">
+              <h3>Projet Web Scraping AMAZON</h3>
+              <p>Extraction et analyse de données avec Python et Selenium.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Selenium</span>
+              </div>
+              <div class="project-actions">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  data-title="Projet Web Scraping AMAZON"
+                  data-tech="Python,Selenium,VS Code,CSV,MVC"
+                  data-desc="Objectif : automatiser la collecte d'informations sur des produits Amazon dans la catégorie informatique. Réalisé sous Visual Studio Code avec Selenium pour automatiser le navigateur, un environnement virtuel Python et une architecture MVC afin de bien séparer les responsabilités du programme. Le projet prévoit également l'organisation des données et leur export au format CSV. Difficultés rencontrées : configuration de l'environnement, prise en main de Selenium, extraction des données et structuration du code. Apports : meilleure compréhension du web scraping et mise en pratique de Python."
+                  onclick="openDetailFromBtn(this)">
+                  Voir plus →
+                </button>
+                <a href="https://github.com/raniyamariec-collab/Amazon_scraper   " target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  GitHub ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" id="bibliotheque">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=500&q=80" alt="Gestion de Bibliothèque">
+            </div>
+            <div class="project-body">
+              <h3>Gestion de Bibliothèque</h3>
+              <p>Application de gestion de livres avec Python et SQLite.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">SQLite</span>
+              </div>
+              <div class="project-actions">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  data-title="Gestion de Bibliothèque"
+                  data-tech="Python,SQLite"
+                  data-desc=" J'ai travaillé sur un projet de gestion de bibliothèque développé en Python. L'objectif était de concevoir une application permettant d'organiser les données liées à une bibliothèque et de travailler avec une base de données SQLite.
+ 
+J'ai utilisé Visual Studio Code comme environnement de développement et un environnement virtuel Python pour isoler les dépendances. Nous avons également travaillé sur la partie dépôt de données avec SQLite et sur les tests automatisés afin de vérifier le fonctionnement du programme.
+ 
+J'ai appris à exécuter des scripts Python, à organiser les fichiers du projet, à lancer des tests et à préparer le code pour son partage avec Git.
+ 
+La principale difficulté était de bien comprendre l'organisation du projet et le rôle de chaque fichier, sans accumuler des modifications sans comprendre leur utilité."
+                  onclick="openDetailFromBtn(this)">
+                  Voir plus →
+                </button>
+                <a href="https://github.com/raniyamariec-collab/Gestion-Biblioth-que-" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  GitHub ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" id="chantier">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=500&q=80" alt="Gestion de Chantier">
+            </div>
+            <div class="project-body">
+              <h3>Gestion de Chantier</h3>
+              <p>Suivi de chantier avec C# et MySQL.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+              <div class="project-actions">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  data-title="Gestion de Chantier"
+                  data-tech="C#,MySQL"
+                  data-desc="J'ai travaillé sur un projet de gestion de chantier avec C#, Windows Forms et MySQL, dans l'environnement Visual Studio.
+ 
+L'objectif était de développer une application de bureau permettant de gérer les informations des clients propriétaires de chantiers. L'application dispose de formulaires pour saisir et consulter les informations, ainsi que d'un tableau permettant d'afficher les clients enregistrés.
+ 
+J'ai utilisé MySQL pour stocker les données et la bibliothèque MySql.Data pour assurer la connexion entre la base de données et l'application C#.
+ 
+J'ai travaillé sur plusieurs opérations, notamment l'affichage, l'ajout et la suppression des clients, ainsi que sur la préparation des fonctionnalités de consultation et de modification.
+ 
+Les principales difficultés concernaient la configuration de la connexion à la base de données, l'affichage des données et la communication entre les différents formulaires.
+ 
+Ce projet m'a permis de pratiquer la programmation orientée objet, le développement d'interfaces graphiques et l'utilisation d'une base de données relationnelle avec SQL."
+                  onclick="openDetailFromBtn(this)">
+                 Voir plus → 
+                
+                </button>
+                
+                  
+               
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" id="analyse-prix">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=500&q=80" alt="Analyse des Prix">
+            </div>
+            <div class="project-body">
+              <h3>Analyse des Prix</h3>
+              <p>Analyse comparative des prix avec Python et Pandas.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pandas</span>
+              </div>
+              <div class="project-actions">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  data-title="Analyse des Prix"
+                  data-tech="Python,Pandas,Analyse de données"
+                  data-desc="J'ai réalisé un projet d'analyse comparative des prix avec Python. L'objectif était de comparer les prix de produits provenant de plusieurs sources commerciales afin d'identifier les différences de prix et de produire des indicateurs utiles à l'analyse du marché.
+ 
+Pour ce projet, j'ai utilisé plusieurs formats de données, notamment CSV, JSON et Excel. J'ai travaillé sur la lecture et le traitement des données, le calcul des prix moyens et l'analyse d'une réduction Black Friday.
+ 
+J'ai également utilisé Git et GitHub pour gérer et publier le projet.
+ 
+La principale difficulté était de travailler avec des données provenant de sources et de formats différents, tout en veillant à comparer correctement les produits. Ce projet m'a permis de mettre en pratique Python, le traitement de données et les bases de l'analyse comparative des prix."
+                  onclick="openDetailFromBtn(this)">
+                  Voir plus →
+                </button>
+                <a href="https://github.com/raniyamariec-collab/analyse-comparative-prix" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  GitHub ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+         <article class="project-card" id="robotique">
+  <div class="project-thumb">
+    <video class="project-video" controls preload="metadata" poster="apercu-robotique.jpg">
+      <source src="WhatsApp Video 2026-11-21 at 21.10.48.mp4" type="video/mp4" />
+      Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+    </video>
+  </div>
+  <div class="project-body">
+    <h3>Projet Robotique</h3>
+    <p>Robot intelligent avec Arduino et C++.</p>
+    <div class="tech-tags">
+      <span class="tech-tag">Arduino</span>
+      <span class="tech-tag">C++</span>
+    </div>
+    <div class="project-actions">
+      <button
+        type="button"
+        class="btn btn-primary btn-sm"
+        data-title="Projet Robotique"
+        data-tech="Arduino,C++"
+        data-desc="Objectif : concevoir et programmer un système robotique capable d'interagir avec son environnement via des capteurs. Technologies : carte Arduino programmée en C++. Apports : lien concret entre le code informatique et le matériel électronique."
+        onclick="openDetailFromBtn(this)">
+        Voir plus →
+      </button>
+    </div>
+  </div>
+</article>
+ 
+
+          <article class="project-card" id="tresorerie">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=500&q=80" alt="Mini Trésorerie">
+            </div>
+            <div class="project-body">
+              <h3>Mini Trésorerie</h3>
+              <p>Gestion financière avec MySQL et Visual Studio.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">visual studio</span>
+              </div>
+              <div class="project-actions">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  data-title="Mini Trésorerie"
+                 data-tech="Visual studio,C++"
+                 data-desc="Objectif :Conception d'une application visant à faciliter le suivi des opérations financières, l'organisation des données et la consultation des informations de trésorerie.
+                 Technologies : C#, Visual Studio, SQL Server."
+                 onclick="openDetailFromBtn(this)">
+                 Voir plus →
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- MA VIDÉO DE PRÉSENTATION -->
+        <div class="panel-card video-panel">
+          <h2 class="panel-title"><span class="icon-accent">▶</span> Ma vidéo de présentation</h2>
+          <div class="video-box">
+            <video class="video-player" controls preload="metadata" poster="apercu-video.jpg">
+              <source src="Enregistrement 2026-11-21 233803.mp4" type="video/mp4" />
+              Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+            </video>
+          </div>
+        </div>
+
+        <!-- MON PARCOURS & ME CONTACTER -->
+        <div class="two-col-grid" id="contact">
+          <div class="panel-card">
+            <h2 class="panel-title"><span class="icon-accent">🎓</span> Mon Parcours</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <h4>Primaire</h4>
+                <span>2011 – 2018</span>
+              </div>
+              <div class="timeline-item">
+                <h4>Collège 6ème a 3ème</h4>
+                <span>2018 – 2021</span>
+              </div>
+              <div class="timeline-item">
+                <h4>Lycée 2nd a terminale</h4>
+                <span>2021 – 2025 (BAC D)</span>
+              </div>
+              <div class="timeline-item">
+                <h4>Licence 1</h4>
+                <span>2025 – 2026</span>
+              </div>
+              <div class="timeline-item">
+                <h4>Licence 2</h4>
+                <span>2026 – 2027 (en cours)</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="panel-card">
+            <h2 class="panel-title"><span class="icon-accent">✉</span> Me Contacter</h2>
+            <p class="contact-lead">
+              Discutons de vos projets ou collaborons ensemble !
+            </p>
+
+            <div class="contact-split">
+              <ul class="contact-info-list">
+                <li>
+                  <span class="contact-badge">✉</span>
+                  <a href="mailto:raniyamariec@gmail.com">raniyamariec@gmail.com</a>
+                </li>
+                <li>
+                  <span class="contact-badge">📍</span>
+                  <span>0779021974</span>
+                </li>
+                <li>
+                  <span class="contact-badge">in</span>
+                  <a href="#" target="_blank" rel="noopener">Mon LinkedIn ↗</a>
+                </li>
+                <li>
+                  <span class="contact-badge">GH</span>
+                  <a href="https://github.com/raniyamariac-collab" target="_blank" rel="noopener">Mon GitHub ↗</a>
+                </li>
+              </ul>
+
+              <form class="contact-form" id="contactForm" action="https://formsubmit.co/ajax/raniyamariec@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio de Raniya" />
+                <input type="text" name="nom" placeholder="Votre nom" required />
+                <input type="text" name="prenom" placeholder="Votre prénom" required />
+                <input type="email" name="email" placeholder="Votre e-mail" required />
+                <textarea name="message" placeholder="Votre message" required></textarea>
+                <button type="submit" class="btn btn-primary btn-sm" id="sendBtn">Envoyer ✈</button>
+                <p class="form-feedback" id="msgOk">Merci ! Votre message a bien été envoyé.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const btn = document.getElementById('sendBtn');
+        const feedback = document.getElementById('msgOk');
+        const formData = new FormData(contactForm);
+
+        btn.disabled = true;
+        btn.textContent = 'Envoi...';
+        feedback.style.display = 'none';
+        feedback.style.color = '#86efac';
+
+        try {
+          const response = await fetch(contactForm.action, {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: formData
+          });
+
+          if (response.ok) {
+            feedback.textContent = 'Merci ! Votre message a bien été envoyé.';
+            feedback.style.display = 'block';
+            contactForm.reset();
+          } else {
+            feedback.textContent = "Erreur lors de l'envoi. Réessayez plus tard.";
+            feedback.style.color = '#fca5a5';
+            feedback.style.display = 'block';
+          }
+        } catch (err) {
+          feedback.textContent = "Problème de connexion. Vérifiez votre réseau.";
+          feedback.style.color = '#fca5a5';
+          feedback.style.display = 'block';
+        } finally {
+          btn.disabled = false;
+          btn.textContent = 'Envoyer ✈';
+        }
+      });
+    }
+  </script>
+
+           </section>
+  </main>
+
+   
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <p class="motto">Avancer doucement mais sûrement ♡</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/raniya-marie-carmel-kouamé-617382381?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-btn" aria-label="LinkedIn">in</a>
+        <a href="c:\Users\HP\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\ABD528D33D516B1457CE8965EF965682A3C320A8\transfers\2026-47\WhatsApp Image 2026-11-21 at 21.31.52.jpeg" class="social-btn" aria-label="Instagram">IG</a>
+         <a href="https://github.com/">GitHub</a>
+         <a href=" c:\Users\HP\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\ABD528D33D516B1457CE8965EF965682A3C320A8\transfers\2026-47\WhatsApp Image 2026-11-21 at 22.00.15.jpeg">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODALE DÉTAIL PROJET -->
+  <div class="modal-backdrop" id="projectModal" onclick="if(event.target === this) closeModal()">
+    <div class="modal-box">
+      <button type="button" class="modal-close" aria-label="Fermer" onclick="closeModal()">✕</button>
+      <h3 id="modalTitle">Titre du projet</h3>
+      <p id="modalDesc">Description du projet.</p>
+      <div class="tech-tags" id="modalTechs"></div>
+    </div>
+  </div>
+
+  <script>
+    function openDetailFromBtn(btn) {
+      const title = btn.dataset.title || '';
+      const desc = btn.dataset.desc || '';
+      const techs = btn.dataset.tech
+        ? btn.dataset.tech.split(',').map((item) => item.trim()).filter(Boolean)
+        : [];
+
+      openDetail(title, desc, techs);
+    }
+
+    function openDetail(title, desc, techs = []) {
+      const modal = document.getElementById('projectModal');
+      const titleEl = document.getElementById('modalTitle');
+      const descEl = document.getElementById('modalDesc');
+      const techsEl = document.getElementById('modalTechs');
+
+      if (!modal) return;
+
+      if (titleEl) titleEl.textContent = title;
+      if (descEl) descEl.textContent = desc;
+
+      if (techsEl) {
+        techsEl.innerHTML = '';
+        techs.forEach((tech) => {
+          const span = document.createElement('span');
+          span.className = 'tech-tag';
+          span.textContent = tech;
+          techsEl.appendChild(span);
+        });
+      }
+
+      modal.classList.add('open');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('projectModal');
+      if (modal) {
+        modal.classList.remove('open');
+      }
+    }
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        closeModal();
+      }
+    });
+
+    document.querySelectorAll('#navLinks a').forEach((link) => {
+      link.addEventListener('click', () => {
+        const nav = document.getElementById('navLinks');
+        if (nav) nav.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>
